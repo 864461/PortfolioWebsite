@@ -115,23 +115,27 @@ function HeroSection() {
               <div className="ml-4 lg:ml-8 mr-2">
                 <span className=" text-white">skills:</span>
                 <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">React</span>
+                <span className="text-amber-300">Java</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
+                <span className="text-amber-300">DATABASE</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
+                <span className="text-amber-300">CLOUD</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
+                <span className="text-amber-300">JAVASCRIPT</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
+                <span className="text-amber-300">CI/DC</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
+                <span className="text-amber-300">SCRIPTING</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
+                <span className="text-amber-300">GIT</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Docker</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AWS</span>
+                <span className="text-amber-300">SPRING</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">.NET</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">.LEARNING</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>

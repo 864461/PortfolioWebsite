@@ -11,7 +11,7 @@ export const personalData = {
   linkedIn: 'www.linkedin.com/in/alvin-mugabe-dev101/',
   twitter: '',
   stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
-  leetcode: "",
+  leetcode: '',
   devUsername: "864461",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/11t28eSrM_SuFrFDgspAf2KiQkg7thbQq/view?usp=drive_link"
 }

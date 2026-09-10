@@ -2,23 +2,18 @@ export const skillsData = [
   'HTML',
   'CSS',
   'Javascript',
-  'Java',
-  'React',
-  'GCP',
-  'SpringFramework',
-  'Jenkins',
   'MySQL',
   'PostgreSQL',
   'Git',
   'AWS',
-  'Firestore',
   'Docker',
+  'CSS',
+  'React',
+  'GCP',
+  'Java',
   'Flutter',
-  'Dart',
-  'Bitbucket',
-  '.Net',
-  'Datadog',
-  'JUnit'
+  'Dart'
+
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
@@ -27,10 +22,10 @@ export const skillsData = [
 
 // AVAILABLE SKILLS
 
-/* 
+/*
   HTML
   CSS
-  JS 
+  JS
   React
   Next JS
   Nuxt JS
