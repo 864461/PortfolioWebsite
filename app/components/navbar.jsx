@@ -1,8 +1,25 @@
 // @flow strict
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { FiMoon, FiSun } from "react-icons/fi";
 
 
 function Navbar() {
+  const [isLight, setIsLight] = useState(false);
+
+  useEffect(() => {
+    setIsLight(document.documentElement.dataset.theme === "light");
+  }, []);
+
+  function toggleTheme() {
+    const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+    document.documentElement.dataset.theme = nextTheme;
+    localStorage.setItem("portfolio-theme", nextTheme);
+    setIsLight(nextTheme === "light");
+  }
+
   return (
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
@@ -36,6 +53,16 @@ function Navbar() {
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div></Link>
           </li>
         </ul>
+        <button
+          type="button"
+          onClick={toggleTheme}
+          aria-pressed={isLight}
+          className="ml-4 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#464c6a] text-white transition-colors hover:border-violet-500 hover:text-violet-500"
+          aria-label={`Switch to ${isLight ? "dark" : "light"} mode`}
+          title={`Switch to ${isLight ? "dark" : "light"} mode`}
+        >
+          {isLight ? <FiMoon aria-hidden="true" /> : <FiSun aria-hidden="true" />}
+        </button>
       </div>
     </nav>
   );

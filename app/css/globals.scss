@@ -1,18 +1,135 @@
 @use "tailwindcss";
 
 :root {
-  --foreground-rgb: rgb(211, 216, 232);
+  color-scheme: dark;
+  --page-background: #0d1224;
+  --page-foreground: #d3d8e8;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-  }
+html[data-theme="light"] {
+  color-scheme: light;
+  --page-background: #f5f7fc;
+  --page-foreground: #20283a;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-color: #0d1224;
+  color: var(--page-foreground);
+  background-color: var(--page-background);
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+html[data-theme="light"] main {
+  color: #20283a;
+}
+
+html[data-theme="light"] .text-white {
+  color: #20283a !important;
+}
+
+html[data-theme="light"] [class*="bg-[#1a1443]"].text-white,
+html[data-theme="light"] .bg-gradient-to-r.text-white,
+html[data-theme="light"] .bg-violet-500.text-white,
+html[data-theme="light"] button.bg-gradient-to-r.text-white,
+html[data-theme="light"] a.bg-gradient-to-r.text-white {
+  color: #fff !important;
+}
+
+html[data-theme="light"] [class*="bg-[#0d1224]"],
+html[data-theme="light"] [class*="bg-[#101123]"],
+html[data-theme="light"] [class*="bg-[#11152c]"],
+html[data-theme="light"] [class*="bg-[#1b203e]"],
+html[data-theme="light"] [class*="bg-[#10172d]"] {
+  background-color: #fff !important;
+}
+
+html[data-theme="light"] [class*="bg-[#0f0b24]"],
+html[data-theme="light"] [class*="bg-[linear-gradient(90deg"] {
+  background: #fff !important;
+}
+
+html[data-theme="light"] [class*="from-[#0d1224]"] {
+  background-image: linear-gradient(to right, #fff, #edf1fa) !important;
+}
+
+html[data-theme="light"] [class*="text-[#d3d8e8]"],
+html[data-theme="light"] [class*="text-[#ffff]"],
+html[data-theme="light"] .text-gray-200,
+html[data-theme="light"] .text-gray-300,
+html[data-theme="light"] .text-gray-400 {
+  color: #536078 !important;
+}
+
+// Use a muted blue-gray accent palette on light surfaces instead of the bright
+// neon accents used by the dark theme.
+html[data-theme="light"] [class*="text-[#16f2b3]"],
+html[data-theme="light"] [class~="text-pink-500"],
+html[data-theme="light"] [class~="text-pink-600"],
+html[data-theme="light"] [class~="text-amber-300"],
+html[data-theme="light"] [class~="text-orange-400"],
+html[data-theme="light"] [class~="text-cyan-400"],
+html[data-theme="light"] [class~="text-green-400"],
+html[data-theme="light"] [class~="text-violet-500"],
+html[data-theme="light"] [class~="text-violet-600"],
+html[data-theme="light"] [class*="text-[#EFF3F4]"] {
+  color: #385477 !important;
+}
+
+html[data-theme="light"] [class*="hover:text-pink-600"]:hover,
+html[data-theme="light"] [class*="hover:text-violet-500"]:hover,
+html[data-theme="light"] [class*="hover:text-violet-600"]:hover {
+  color: #243b59 !important;
+}
+
+html[data-theme="light"] [class*="from-pink-500"][class*="to-violet-600"] {
+  background-image: linear-gradient(90deg, #385477, #536b91) !important;
+}
+
+html[data-theme="light"] [class*="via-pink-500"] {
+  background-image: linear-gradient(90deg, transparent, #71839c, #71839c) !important;
+}
+
+html[data-theme="light"] [class*="via-violet-500"] {
+  background-image: linear-gradient(90deg, transparent, #71839c, transparent) !important;
+}
+
+html[data-theme="light"] [class*="bg-green-200"],
+html[data-theme="light"] [class*="hover:bg-[#16f2b3]"],
+html[data-theme="light"] [class*="bg-[#16f2b3]"] {
+  background-color: #dbe3ee !important;
+}
+
+html[data-theme="light"] [class*="bg-violet-500"] {
+  background-color: #536b91 !important;
+}
+
+html[data-theme="light"] [class*="border-[#EFF3F4]"],
+html[data-theme="light"] [class*="hover:bg-[#231d4b]"]:hover {
+  border-color: #71839c !important;
+  background-color: #e8edf4 !important;
+}
+
+html[data-theme="light"] [class*="border-violet-500"],
+html[data-theme="light"] [class*="hover:border-violet-500"]:hover {
+  border-color: #71839c !important;
+}
+
+html[data-theme="light"] [class*="border-[#25213b]"],
+html[data-theme="light"] [class*="border-[#353951]"],
+html[data-theme="light"] [class*="border-[#464c6a]"],
+html[data-theme="light"] [class*="border-[#1d293a]"],
+html[data-theme="light"] [class*="border-[#1f223c]"] {
+  border-color: #d8deeb !important;
+}
+
+html[data-theme="light"] footer,
+html[data-theme="light"] footer > div {
+  background-color: #eef1f8 !important;
+  color: #20283a;
+}
+
+html[data-theme="light"] input,
+html[data-theme="light"] textarea {
+  color: #20283a;
 }
 
 #sticky-card-1 {

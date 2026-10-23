@@ -2,7 +2,7 @@ export const personalData = {
   name: "Alvin Mugabe",
   profile: '/profile.png',
   designation: "Software Developer",
-  description: "My name is Alvin Mugabe. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
+  description: "I'm a London-based software engineer with seven years of experience designing, building, and supporting software. I specialise in Java and have delivered secure, scalable applications for clients across the utility, banking, and public sectors. In recent years, I've focused on finance and billing systems, where I work through complex business requirements and turn them into reliable solutions. My experience spans solution architecture, API-driven and event-driven systems, cloud platforms including AWS and Google Cloud, and the full software development lifecycle. I enjoy solving difficult problems, collaborating with clients and delivery teams, and helping other developers grow.",
   email: 'mugabealvin20011@hotmail.co.uk',
   phone: '+447400920909',
   address: 'London',
