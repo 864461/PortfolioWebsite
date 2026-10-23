@@ -16,7 +16,6 @@
 </p>
 
 <p align="center">
-  <a href="#demo-movie_camera">Demo</a> •
   <a href="#features-sparkles">Features</a> •
   <a href="#installation-arrow_down">Installation</a> •
   <a href="#usage-joystick">Usage</a> •
@@ -28,21 +27,7 @@
 
 ## Overview
 
-A professional portfolio template built with **Next.js 16**, **React 19**, and **Tailwind CSS 4**. Features a modern App Router architecture, server components, and data-driven configuration for easy customization.
-
----
-
-## Demo :movie_camera:
-
-<p align="center">
-  <img src="./public/image/screen.png" alt="Portfolio Screenshot" width="100%">
-</p>
-
-<p align="center">
-  <a href="https://abusaid.netlify.app/" target="_blank">
-    <strong>🚀 View Live Demo</strong>
-  </a>
-</p>
+A professional portfolio built with **Next.js 16**, **React 19**, and **Tailwind CSS 4**, featuring a modern App Router architecture, server components, and data-driven configuration. This project is based on the original [Developer Portfolio repository](https://github.com/said7388/developer-portfolio), created by Abu ([@said7388](https://github.com/said7388)). Credit and thanks to Abu for the original project and template.
 
 ---
 
@@ -97,7 +82,6 @@ This portfolio leverages the latest Next.js 16 and React 19 capabilities:
 ## Table of Contents :scroll:
 
 - [Overview](#overview)
-- [Demo](#demo-movie_camera)
 - [Features](#features-sparkles)
 - [Sections](#sections-bookmark)
 - [Tech Stack](#tech-stack-computer)
@@ -581,7 +565,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## Support :coffee:
 
-- ⭐ [Star the repository](https://github.com/said7388/developer-portfolio/stargazers)
+- ⭐ [Star the original repository](https://github.com/said7388/developer-portfolio)
 - � [Report bugs](https://github.com/said7388/developer-portfolio/issues)
 - � [Suggest features](https://github.com/said7388/developer-portfolio/discussions)
 
