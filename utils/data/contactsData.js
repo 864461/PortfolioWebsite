@@ -4,7 +4,7 @@ export const contactsData = {
     address: 'London ',
     github: 'https://github.com/864461',
     facebook: '',
-    linkedIn: 'www.linkedin.com/in/alvin-mugabe-dev101',
+    linkedIn: 'https://www.linkedin.com/in/alvin-mugabe-dev101',
     twitter: '',
     stackOverflow: '',
     devUsername: "864461"
