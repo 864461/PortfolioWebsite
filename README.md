@@ -236,9 +236,6 @@ Create a `.env` file in the root directory with the following variables:
 # Google Tag Manager (Optional - for analytics)
 NEXT_PUBLIC_GTM=GTM-XXXXXXX
 
-# Your deployed app URL
-NEXT_PUBLIC_APP_URL=https://your-domain.com
-
 # Telegram Bot Configuration (for contact form notifications)
 TELEGRAM_BOT_TOKEN=your_bot_token_here
 TELEGRAM_CHAT_ID=your_chat_id_here
@@ -253,13 +250,14 @@ EMAIL_ADDRESS=your_email@gmail.com
 | Variable              | Required | Description                                  |
 | --------------------- | -------- | -------------------------------------------- |
 | `NEXT_PUBLIC_GTM`     | No       | Google Tag Manager ID for analytics tracking |
-| `NEXT_PUBLIC_APP_URL` | Yes      | Your portfolio's public URL                  |
 | `TELEGRAM_BOT_TOKEN`  | No       | Token for Telegram bot notifications         |
 | `TELEGRAM_CHAT_ID`    | No       | Your Telegram chat ID for receiving messages |
 | `GMAIL_PASSKEY`       | No       | Gmail app password for email notifications   |
 | `EMAIL_ADDRESS`       | No       | Your Gmail address for sending emails        |
 
 > **Note**: Contact form features require either Telegram or Gmail configuration (or both).
+
+> **Custom domain note**: The contact form currently calls the same-origin `/api/contact` route, so no app URL setting is needed. If you later change it to use an absolute API URL, set `NEXT_PUBLIC_APP_URL` to your domain (for example, `https://your-domain.com`) in your local `.env` and in Vercel's Environment Variables, then redeploy.
 
 ---
 
